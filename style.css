@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.padding-general {
+    padding: 20vh 20vh;
+}
+
+header {
+    background-image: url('/hero.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6); /* negro semitransparente arriba */
+    background-blend-mode: darken; /* o multiply, overlay, etc. */
+    height: 100vh;
+}
+
+.hero-metodo {
+    background-image: url('/img/hero-metodo.png');
+}
+
+.hero-metodo main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.hero-metodo main h3, .hero-metodo main p {
+    color: #efefef;
+}
+
+header main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header main img {
+    height: 50vh;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li a, footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-rose {
+    background-color: #FDEFEE;
+}
+
+.container-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.container-text  > div {
+    width: 40vw;
+}
+
+h3{
+    color: #2E2E2E;
+    font-style: italic;
+}
+
+h1 {
+    color: #FE7BAA;
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.text-main {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+}
+.container-metodo {
+    background-image: url('/hero.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8); /* negro semitransparente arriba */
+    background-blend-mode: darken; /* o multiply, overlay, etc. */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+}
+
+.container-metodo h3 {
+    color: #efefef;
+}
+
+.container-metodo p {
+    color: white;
+}
+
+.container-metodo > div {
+    width: 40vw;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #2E2E2E;
+    gap: 30px;
+    padding: 10vh 20vh;
+}
+footer div, footer ul {
+    width: 30vw;
+    list-style: none;
+}
+footer div img {
+    height: 20vh;
+    width: auto;
+}
+
+footer h3, footer p {
+    color: #efefef;
+}
+
+footer .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+#btn-primary {
+    background-color: #FFA63D;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-center {
+    text-align: center;
+    background-color: #f8f8f8b4;
+}
+
+.container-center main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-center main img, .container-center main div {
+    width: 100%;
+    text-align: start;
+}
+.container-center main div {
+    padding: 3vh 5vh;
+}
+.container-center main div p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.container-center main article {
+    width: 30vw;
+    margin-top: 5vh;
+    border-radius: 20px;
+    box-shadow: 0px 8px 8px 0px #0000001A;
+    background-color: white;
+}
+
+.container-testimonios {
+    background-image: url('/hero.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6); /* negro semitransparente arriba */
+    background-blend-mode: darken; /* o multiply, overlay, etc. */
+}   
+
+.container-testimonios h3 {
+    color: #efefef;
+}
+
+.container-testimonios main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 5vh;
+}
+
+.container-testimonios main article {
+    background-color: #efefef;
+    border-radius: 20px;
+    box-shadow: 0px 8px 8px 0px #ffffff1a;
+    padding: 4vh;
+    width: 50%;
+    height: 50vh;
+}
+
+.container-testimonios main article p {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.intercambio {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 60px;
+}
+
+.intercambio div {
+    padding: 1vh 0vh;
+    width: 45vw;
+}
+
+.intercambio article {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 4vh;
+    color: #2E2E2E;
+    width: 25vw;
+    height: 30vh;
+    text-align: center;
+    box-shadow: 0px 8px 8px 0px #0000001a;
+}
+.intercambio article h4 {
+    font-size: 18px;
+    margin-bottom: 2vh;
+}
+p span {
+    font-weight: 600;
+}
+
+form div label, form div input, form div textarea, form div select {
+    width: 100%;
+}
+
+form div input, form div textarea, form div select {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .doble-input {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+form .doble-input > div {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    header main img {
+        height: 30vh;
+    }
+    header {
+        height: auto;
+    }
+    header main {
+        display: block;
+        text-align: center;
+    }
+    .container-text {
+        display: block;
+    }
+    .padding-general {
+        padding: 10vh 8vw;
+    }
+    .container-text > div {
+        width: 100%;
+    }
+    .container-text img {
+        width: 100%;
+        margin-top: 4vh;
+    }
+    .container-metodo > div {
+        width: 100%;
+    }
+    #btn-primary {
+        width: 100%;
+    }
+    footer {
+        display: block;
+        padding: 5vh;
+    }
+    footer .links {
+        display: block;
+    }
+    footer div, footer ul {
+        width: 100%;
+    }
+    header nav {
+        display: none;
+    }
+    header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .hero-metodo main {
+        display: block;
+    }
+    .container-center {
+        text-align: start;
+    }
+
+    .container-center main {
+        display: block;
+    }
+    
+    .container-center main article {
+        width: 100%;
+    }
+    .container-testimonios main {
+        display: block;
+    }
+    .container-testimonios main article {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+    .intercambio {
+        display: block;
+    }
+    .intercambio article, .intercambio div {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .img-logo-text {
+        display: none;
+    }
+    .hero-metodo main {
+        width: 100% !important;
+        text-align: start;
+    }
+    .text-main {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Metodo Astral</title>
+</head>
+
+<body>
+    <header class="padding-general hero-metodo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#sobre">Sobre Galaxia</a></li>
+                <li><a href="metodoastral.html">Metodo Astral</a></li>
+                <li><a href="index.html#detras">Quien hay detrás</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h3>Inscripción</h3>
+                <h1>Metodo astral</h1>
+                <br>
+                <p>Este programa es exclusivo y está diseñado para acompañarte y guiar tu proceso. Por eso, antes de
+                    sumarte, necesitamos conocerte un poco más:
+                    <span>completá el formulario de inscripción, revisaremos tu postulación para asegurarnos de que el
+                        programa se ajuste a tus necesidades y, si es aprobada, te enviaremos el enlace para realizar el
+                        pago.</span>
+                </p>
+            </div>
+        </main>
+    </header>
+
+    <section class="padding-general container-text">
+        <div style="width: 100%;">
+            <h1>formulario</h1>
+            <br>
+            <p>Este es un espacio de trabajo profundo y personalizado, por lo que solo se tomarán personas realmente
+                comprometidas con su evolución personal.</p>
+            <br>
+            <form id="contact-form">
+                <h3>PASO 1 - DATOS PERSONALES</h3>
+                <br>
+                <div>
+                    <label for="user_name">Nombre completo</label> <br>
+                    <input type="text" id="user_name" name="user_name" placeholder="Escribe tu nombre completo">
+                </div>
+                <div class="doble-input">
+                    <div>
+                        <label for="fecha_nacimiento">Fecha de Nacimiento</label> <br>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                    </div>
+                    <div>
+                        <label for="hora_nacimiento">Hora de Nacimiento</label> <br>
+                        <input type="time" id="hora_nacimiento" name="hora_nacimiento">
+                    </div>
+                </div>
+                <div>
+                    <label for="lugar_nacimiento">Lugar de nacimiento</label> <br>
+                    <input type="text" id="lugar_nacimiento" name="lugar_nacimiento"
+                        placeholder="Escribe tu lugar de nacimiento">
+                </div>
+                <div>
+                    <label for="email">Email</label> <br>
+                    <input type="text" id="email" name="email" placeholder="Escribe tu email">
+                </div>
+                <div>
+                    <label for="celular">Celular</label> <br>
+                    <input type="text" id="celular" name="celular" placeholder="Escribe tu celular">
+                </div>
+                <div>
+                    <label for="instagram">Instagram</label> <br>
+                    <input type="text" id="instagram" name="instagram" placeholder="Escribe tu instagram">
+                </div>
+                <br>
+                <h3>PASO 2 - SOBRE TU PROCESO PERSONAL</h3>
+                <br>
+                <div>
+                    <label for="pregunta_proceso_1">¿Has trabajado antes con herramientas como astrología, tarot, reiki,
+                        péndulo hebreo u otras terapias holísticas? </label>
+                    <br>
+                    <select name="pregunta_proceso_1" required>
+                        <option value="Sí, tengo experiencia con varias">Sí, tengo experiencia con varias</option>
+                        <option value="Sí, pero muy poco.">Sí, pero muy poco.</option>
+                        <option value="No, pero tengo muchas ganas de aprender.">No, pero tengo muchas ganas de
+                            aprender.</option>
+                        <option value="No, y no estoy segura/o si es para mí.">No, y no estoy segura/o si es para mí.
+                        </option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="pregunta_proceso_2">¿Qué te motiva a querer hacer este programa?</label>
+                    <br>
+                    <textarea name="pregunta_proceso_2" id="" cols="30" rows="5" required></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="pregunta_proceso_3">En este momento de tu vida, ¿qué sentís que necesita más
+                        equilibrio?.</label>
+                    <br>
+                    <select name="pregunta_proceso_3" required>
+                        <option value="Mis emociones y mi mundo interior">Mis emociones y mi mundo interior</option>
+                        <option value="Mi energía y vitalidad">Mi energía y vitalidad</option>
+                        <option value="Mis vínculos y relaciones">Mis vínculos y relaciones</option>
+                        <option value="Mi propósito y dirección en la vida">Mi propósito y dirección en la vida</option>
+                        <option value="Mi conexión espiritual">Mi conexión espiritual</option>
+                        <option value="Mi parte material y la abundancia">Mi parte material y la abundancia</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="pregunta_proceso_4">¿Cómo te gustaría que este programa te ayude?</label>
+                    <br>
+                    <textarea name="pregunta_proceso_4" id="" cols="30" rows="5" required></textarea>
+                </div>
+
+                <br>
+                <h3>PASO 3 - COMPROMISO CON EL PROCESO</h3>
+                <br>
+
+                <div>
+                    <label for="compromiso_proceso_1">
+                        ¿Podrás dedicar al menos 2-3 horas semanales a trabajar en tu proceso personal con las
+                        herramientas del programa?
+                    </label>
+                    <br>
+                    <select name="compromiso_proceso_1" required>
+                        <option value="Sí, estoy lista/o para comprometerme con mi crecimiento.">Sí, estoy lista/o para
+                            comprometerme con mi crecimiento.</option>
+                        <option value="No estoy segura/o, pero me interesa.">No estoy segura/o, pero me interesa.
+                        </option>
+                        <option value="No sé si podré sostenerlo.">No sé si podré sostenerlo.</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <br>
+                <div>
+                    <label for="compromiso_proceso_2">
+                        ¿Estás dispuesta/o a hacer ejercicios semanales y aplicar lo aprendido en tu vida diaria?
+                    </label>
+                    <br>
+                    <select name="compromiso_proceso_2" required>
+                        <option value="Sí, quiero integrar todo lo posible.">Sí, quiero integrar todo lo posible.
+                        </option>
+                        <option value="Haré mi mejor esfuerzo.">Haré mi mejor esfuerzo.</option>
+                        <option value="Prefiero solo recibir la información sin tareas extra.">Prefiero solo recibir la
+                            información sin tareas extra.</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="compromiso_proceso_3">Este es un proceso profundo de transformación. ¿Cómo te sentís con
+                        la idea de trabajar en tu mundo interno y energético?</label>
+                    <br>
+                    <textarea name="compromiso_proceso_3" id="" cols="30" rows="5" required></textarea>
+                </div>
+
+                <br>
+                <div>
+                    <label for="abierta_a_sentir_soltar">En este programa trabajamos con herramientas que no siempre
+                        siguen una lógica racional, sino que buscan conectar con tu mundo interno a nivel emocional y
+                        corporal. ¿Estás abierta/o a realizar ejercicios que te inviten a sentir, registrar y soltar sin
+                        necesidad de entenderlo todo desde la mente?</label>
+                    <select name="abierta_a_sentir_soltar" required>
+                        <option value="Sí, estoy lista/o para abrirme a nuevas experiencias.">Sí, estoy lista/o para
+                            abrirme a nuevas experiencias.</option>
+                        <option value="Me cuesta soltar la mente, pero quiero intentarlo.">Me cuesta soltar la mente,
+                            pero quiero intentarlo.</option>
+                        <option value="No me siento cómoda/o con ese tipo de ejercicios.">No me siento cómoda/o con ese
+                            tipo de ejercicios.</option>
+                    </select>
+                </div>
+
+                <br>
+                <h3>PASO 4 - INFORMACIÓN FINAL Y CONFIRMACIÓN</h3>
+                <br>
+                <div>
+                    <label for="comentario_adicional">¿Querés agregar algo más sobre tu proceso o lo que esperás de este
+                        programa?</label>
+                    <br>
+                    <textarea name="comentario_adicional" id="" cols="30" rows="4" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="medio_contacto_preferido">
+                        ¿Cómo te gustaría que te contactemos si quedás seleccionada/o?
+                    </label>
+                    <br>
+                    <select name="medio_contacto_preferido" required>
+                        <option value="Por WhatsApp">Por WhatsApp</option>
+                        <option value="Por Instagram">Por Instagram</option>
+                        <option value="Por Mail">Por Mail</option>
+                    </select>
+                </div>
+                <br>
+                <button type="submit" id="btn-primary">Enviar formulario</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img src="/img/logo.png" alt="">
+            <br>
+            <p>© 2025 Galaxia Astral. Todos los derechos reservados.</p>
+            <br>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                    fill="none">
+                    <path
+                        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path
+                        d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                        stroke="#ffffff" stroke-width="1.5"></path>
+                    <path d="M17.5078 6.5L17.4988 6.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#metodo">Metodo Astral</a></li>
+                <li><a href="#sobre">Sobre Galaxia</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Whatsapp</a></li>
+                <li><a href="">Email</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
