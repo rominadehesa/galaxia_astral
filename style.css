@@ -407,4 +407,11 @@ form .doble-input > div {
         text-decoration: none;
         color: #efefef;
     }
+    form .doble-input {
+        display: block;
+    }
+
+    form .doble-input > div {
+        width: 100%;
+    }
 }
