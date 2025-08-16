@@ -8,6 +8,11 @@ body {
     font-family: 'Poppins';
 }
 
+#btn-menu {
+    border: none;
+    background: none;
+}
+
 .padding-general {
     padding: 20vh 20vh;
 }
@@ -274,6 +279,9 @@ form .doble-input > div {
     width: 50%;
 }
 
+.container-btn-nav {
+    display: none;
+}
 @media (max-width: 768px) {
     header main img {
         height: 30vh;
@@ -315,14 +323,12 @@ form .doble-input > div {
         width: 100%;
     }
     header nav {
-        display: none;
+        margin-bottom: 2vh;
     }
     header nav ul {
         list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        display: none;
+        text-align: end;
     }
     h3 {
         font-size: 16px;
@@ -368,5 +374,37 @@ form .doble-input > div {
     }
     .text-main {
         font-size: 16px;
+    }
+    .container-btn-nav {
+        display: block;
+        position: sticky;
+        text-align: end;
+        top: 0;
+        z-index: 1000;
+        background-color: #fff;
+    }
+    .container-btn-nav div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #list-menu {
+        display: none;
+    }
+    #list-menu.active {
+        display: block; /* o flex, o lo que uses */
+    }
+    .container-btn-nav {
+        background-color: #2E2E2E;
+        color: #efefef;
+        padding: 2vh;
+    }
+    .container-btn-nav ul {
+        list-style: none;
+        margin-top: 2vh;
+    }
+    .container-btn-nav ul li a {
+        text-decoration: none;
+        color: #efefef;
     }
 }
