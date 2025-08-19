@@ -10,7 +10,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     )
     .then(() => {
       alert("✅ Mensaje enviado con éxito!");
-      this.reset();      // limpia el formulario
+       window.location.href = "index.html";
     })
     .catch((error) => {
       console.error("Error:", error);
