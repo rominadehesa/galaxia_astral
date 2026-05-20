@@ -159,8 +159,8 @@
                 </article>
 
                 <article>
-                    <h4 id="cuota"></h4>
-                    <p id="precio_sin_interes"></p>
+                    <h4 id="precio_sin_interes"></h4>
+                    <p id="cuota"></p>
                 </article>
 
             </main>
@@ -276,11 +276,11 @@ try {
     document.getElementById("pago_unico").innerText =
       `VALOR EN PAGO ÚNICO $${data.pago_unico} ARS`;
 
-    document.getElementById("cuota").innerHTML =
-  `VALOR EN CUOTAS <br> $${data.cuota} ARS`;
+    document.getElementById("precio_sin_interes").innerHTML =
+  `VALOR EN CUOTAS <br> $${data.precio_sin_interes} ARS`;
 
-    document.getElementById("precio_sin_interes").innerText =
-      `3 cuotas sin interés de $${data.precio_sin_interes} ARS`;
+    document.getElementById("cuota").innerHTML =
+      `3 cuotas sin interés  <br> de $${data.cuota} ARS`;
 
   } else {
 
