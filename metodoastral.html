@@ -109,27 +109,37 @@
     </section>
 
     <section class="padding-general container-rose">
-        <div>
-            <h3>Formas y metodos de pago</h3>
-            <h1>INTERCAMBIO E INVERSIÓN</h1>
 
-            <br>
+    <div>
 
-            <main class="intercambio">
-                <div>
-                    <p>Este acompañamiento de 3 meses está diseñado para ofrecerte un espacio personalizado y transformador. El valor incluye: 6 sesiones virtuales, herramientas y ejercicios específicos para tu proceso y un acompañamiento constante y cercano para ayudarte a integrar lo aprendido.</p>
-                </div>
-                <article>
-                    <h4>VALOR EN PAGO UNICO $400.000 ARS</h4>
-                    <p>Por Transfencia Bancaria a través de Mercado Pago</p>
-                </article>
-                <article>
-                    <h4>VALOR EN CUOTAS $1.560.000 ARS</h4>
-                    <p>3 cuotas sin interés de $520.000 ARS, a través de Mercado Pago</p>
-                </article>
-            </main>
-        </div>
-    </section>
+        <h3>Formas y metodos de pago</h3>
+        <h1>INTERCAMBIO E INVERSIÓN</h1>
+
+        <br>
+
+        <main class="intercambio">
+
+            <div>
+                <p>
+                    Este acompañamiento de 3 meses está diseñado para ofrecerte un espacio personalizado y transformador.
+                </p>
+            </div>
+
+            <article>
+                <h4 id="pago_unico"></h4>
+                <p>Por Transferencia Bancaria a través de Mercado Pago</p>
+            </article>
+
+            <article>
+                <h4 id="cuota"></h4>
+                <p id="precio_sin_interes"></p>
+            </article>
+
+        </main>
+
+    </div>
+
+</section>
 
 
     <footer>
@@ -181,5 +191,51 @@
             </ul>
         </div>
     </footer>
+
+
+    <script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+
+        import {
+        getFirestore,
+        collection,
+        getDocs
+        } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+        apiKey: "AIzaSyC6IcB1vuYgSvShJl6r9NYwbL-GbRlG5O0",
+        authDomain: "galaxia-astral.firebaseapp.com",
+        projectId: "galaxia-astral",
+        storageBucket: "galaxia-astral.firebasestorage.app",
+        messagingSenderId: "1054342072500",
+        appId: "1:1054342072500:web:0ce250a6155024a1bd6fe1",
+        measurementId: "G-GGV01N88LQ"
+        };
+
+        const app = initializeApp(firebaseConfig);
+
+        const db = getFirestore(app);
+
+        const querySnapshot = await getDocs(collection(db, "propiedades"));
+
+        querySnapshot.forEach((doc) => {
+
+        const data = doc.data();
+
+        document.getElementById("pago_unico").innerText =
+            `VALOR EN PAGO ÚNICO $${data.pago_unico} ARS`;
+
+        document.getElementById("cuota").innerText =
+            `VALOR EN CUOTAS $${data.cuota} ARS`;
+
+        document.getElementById("precio_sin_interes").innerText =
+            `3 cuotas sin interés de $${data.precio_sin_interes} ARS, a través de Mercado Pago`;
+
+        });
+
+        </script>
 </body>
 </html>
+
+
